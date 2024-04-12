@@ -3,7 +3,7 @@ body {
   z-index: -7;
   margin: 0%;
   height: 1000px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   
 }
 li:hover{
@@ -12,7 +12,7 @@ transition: all 0.5s;
 }
 
 .footer {
-  background-color: black;
+  background-color: rgb(15, 15, 15);
   color: white;
   text-align: center;
   height: fit-content;
@@ -113,6 +113,9 @@ font-weight: bold;
   gap: 45px;
   padding: 40px;
   transition: all 1s;
+  border-bottom-style: dotted;
+  border-color: white;
+  
 }
 
 
