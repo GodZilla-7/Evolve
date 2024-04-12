@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <body
+  >
+<header>
+
+  <div class="navbar">
+      
+    <img class="hamburger-menu" src="icon-hamburger.svg"
+    onclick="changeImage()"
+    >
+    <div class="logo" style="padding-top: 8px">
+      <img style="width:80px" src="logo(4).png" />
+    </div>
+    <div class="link">
+      <a class="links-nav">Home</a>
+      <a class="links-nav">About</a>
+      <a class="links-nav">Contact</a>
+      <a class="links-nav">Projects</a>
+      <a class="links-nav">Achievements</a>
+    </div>
+    <button class="req-inv-nav">
+     Our Team
+    </button>
+  </div>
+
+  <div class="mobnav">
+    <a style="margin-top: 25px;" class="moblink">Home</a>
+    <a class="moblink">About</a>
+    <a class="moblink">Contact</a>
+    <a class="moblink">Blog</a>
+    <a style="margin-bottom: 25px;"  class="moblink">Careers</a>
+  </div>
+</header>
+<div style="background-color: black;" class="Bg">
+<img style="  width:100%;
+height:100%;
+object-fit:cover;
+display: block;
+opacity: 0.5;
+
+" src="Bg.jpg">
+</div>
+
+
+<div class="about">
+ 
+  <div class="aboutpara" style="margin: auto;">
+    About <span style="color: white;">Us</span>
+  </div>
+  <div class="vr">
+  We're<span style="color: rgb(2,255,7);
+  font-size: x-large;"> EV</span>OLVE
+</div>
+
+<div style="width: fit-content;
+margin: auto;">
+  <img style="width: 40vw;
+  max-width: 400px;
+  border-radius: 30px;
+  " src="Snapinsta.app_425449255_905363547802456_6111451529000271246_n_1080.jpg">
+</div>
+<div style="width: 50vw;
+margin: auto;
+font-family: public sans;
+">
+<p style="color: white;">
+  Evolve, originating from MANIT, stands as a beacon in electric vehicle innovation. With a focus on sustainability, it garners awards nationally. Through collaborative efforts, students engineer cutting-edge designs, earning acclaim. Evolve isn't just about accolades; it's a community, fostering passion for clean energy. Together, members push boundaries, inspiring others to join the movement towards a greener tomorrow.
+
+</p>
+</div>
+
+</div>
+
+
+
+<div style="display: flex;">
+  <div class="aboutpara" style="margin: auto;
+display:inline;">
+  Our <span style="color: white;">Gallery</span>
+</div>
+</div>
+
+
+<div class="image-grid">
+  <div class="image-item">
+    <img src="gallery/1.jpg" alt="Image 1">
+  </div>
+  <div class="image-item">
+    <img src="gallery/2.jpg" alt="Image 2">
+  </div>
+  <div class="image-item">
+    <img src="gallery/3.jpg" alt="Image 3">
+  </div>
+  <div class="image-item">
+    <img src="gallery/4.jpg" alt="Image 1">
+  </div>
+  <div class="image-item">
+    <img src="gallery/5.jpg" alt="Image 2">
+  </div>
+  <div class="image-item">
+    <img src="gallery/6.jpg" alt="Image 3">
+  </div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+  <div style="display: flex;">
+    <div class="footer-logo">
+    <img style="width: 100%;" src="logo(4).png">
+  </div>
+  </div>
+
+  <div style="display: flex;align-items: center;
+  justify-content: center;">
+    <ul class="footer-links">
+      <li><a><span style="color: rgb(2,255,7);
+      font-size: larger;
+      font-weight: 800;">H</span>ome</a></li>
+      <li><a><span style="color: rgb(2,255,7);font-size: larger;
+        font-weight: 800;">A</span>bout</a></li>
+      <li><a><span style="color: rgb(2,255,7);
+      font-size: larger;
+      font-weight: 800;">Our </span>Team</a></li>
+
+    </ul>
+    
+    <form>
+      <div style="margin-bottom: 20px; font-family: public sans, arial;
+      font-weight: bold;
+      font-size: 25px;
+        ;"><span style="color: rgb(2,255,7);
+        font-size: 35px;">Contact </span>Us</div>
+      <div class="form-group">
+  
+        <input type="text" placeholder="Your name">
+      </div>
+      
+      <div class="form-group">
+        <input type="email" id="email"  placeholder="Your email">
+      </div>
+  
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Your Message" >
+      </div>
+      
+     
+      
+      <button class="req-inv-foot">Send Message</button>
+    </form>
+  </div>
+  
+  
+</footer>
+
+    
+    <script>
+      function changeImage(){
+  let x= document.querySelector(".mobnav");
+  if (x.style.display === "flex") {
+x.style.display = "none";
+} else {
+x.style.display = "flex";
+}
+}
+      window.onscroll = function() {scrollFunction(),scrollFunction1(),scrollFunction2()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector(".navbar").style.width = "86%";
+    document.querySelector(".navbar").style.marginLeft= "7%";
+    document.querySelector(".navbar").style.height= "65px";
+   
+  } else {
+    document.querySelector(".navbar").style.width = "96%";
+    document.querySelector(".navbar").style.marginLeft= "2%";
+    document.querySelector(".navbar").style.height= "70px";
+  }
+} 
+
+
+
+
+function scrollFunction1() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    document.querySelector(".about").style.width = "96%";
+    document.querySelector(".about").style.marginLeft= "2%";
+    document.querySelector(".about").style.opacity = "1";
+    
+   
+  } else {
+    document.querySelector(".about").style.width = "40%";
+    document.querySelector(".about").style.marginLeft= "10%";
+    document.querySelector(".about").style.opacity = ".2";
+  
+  }
+} 
+
+function scrollFunction2() {
+  if (document.body.scrollTop > 1150 || document.documentElement.scrollTop > 1150) {
+    
+    document.querySelector(".image-grid").style.opacity = "1";
+    
+   
+  } else {
+   
+    document.querySelector(".image-grid").style.opacity = ".2";
+  
+  }
+} 
+
+    </script> 
+  </body>
+</html>
