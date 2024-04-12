@@ -3,7 +3,7 @@ body {
   z-index: -7;
   margin: 0%;
   height: 1000px;
-  background-color: rgb(12, 12, 12);
+  background-color: black;
   
 }
 li:hover{
@@ -14,7 +14,7 @@ html{
   overflow-x: hidden;
 }
 .footer {
-  background-color: rgb(12, 12, 12);
+  background-color: black;
   color: white;
   text-align: center;
   height: fit-content;
