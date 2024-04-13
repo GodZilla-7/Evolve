@@ -11,12 +11,12 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Evolve</title>
+    <title>Document</title>
     
   </head>
   <body
   >
-<header>
+<header id="head">
 
   <div class="navbar">
       
@@ -27,11 +27,11 @@
       <img style="width:80px" src="logo(4).png" />
     </div>
     <div class="link">
-      <a class="links-nav">Home</a>
-      <a class="links-nav">About</a>
-      <a class="links-nav">Contact</a>
-      <a class="links-nav">Projects</a>
-      <a class="links-nav">Achievements</a>
+      <a class="links-nav" href="#head">Home</a>
+      <a class="links-nav" href="#about">About</a>
+      <a class="links-nav" href="#foot">Contact</a>
+      <a class="links-nav" href="#gallery">Gallery</a>
+      <a class="links-nav" href="#about">Achievements</a>
     </div>
     <button class="req-inv-nav">
      Our Team
@@ -39,13 +39,15 @@
   </div>
 
   <div class="mobnav">
-    <a style="margin-top: 25px;" class="moblink">Home</a>
-    <a class="moblink">About</a>
-    <a class="moblink">Contact</a>
-    <a class="moblink">Blog</a>
-    <a style="margin-bottom: 25px;"  class="moblink">Careers</a>
+    <a style="margin-top: 25px;" class="moblink" href="#head">Home</a>
+    <a class="moblink" href="#about">About</a>
+    <a class="moblink" href="#foot">Contact</a>
+    <a class="moblink" href="#gallery">Gallery</a>
+    <a style="margin-bottom: 25px;"  class="moblink" href="#head">Careers</a>
   </div>
 </header>
+
+
 <div style="background-color: black;" class="Bg">
 <img style="  width:100%;
 height:100%;
@@ -57,7 +59,7 @@ opacity: 0.5;
 </div>
 
 
-<div class="about">
+<div id="about" class="about">
  
   <div class="aboutpara" style="margin: auto;">
     About <span style="color: white;">Us</span>
@@ -69,12 +71,14 @@ opacity: 0.5;
 
 <div style="width: fit-content;
 margin: auto;">
-  <img style="width: 40vw;
-  max-width: 400px;
+  <img style="width: 30vw;
+  min-width: 340px;
   border-radius: 30px;
   " src="Snapinsta.app_425449255_905363547802456_6111451529000271246_n_1080.jpg">
+
 </div>
-<div style="width: 50vw;
+<div style="width: 72vw;
+max-width: 600px;
 margin: auto;
 font-family: public sans;
 ">
@@ -88,7 +92,7 @@ font-family: public sans;
 
 
 
-<div style="display: flex;">
+<div id="gallery" style="display: flex;">
   <div class="aboutpara" style="margin: auto;
 display:inline;">
   Our <span style="color: white;">Gallery</span>
@@ -122,7 +126,7 @@ display:inline;">
 
 
 
-<footer class="footer">
+<footer id="foot" class="footer">
   <div style="display: flex;">
     <div class="footer-logo">
     <img style="width: 100%;" src="logo(4).png">
@@ -147,6 +151,7 @@ display:inline;">
       <div style="margin-bottom: 20px; font-family: public sans, arial;
       font-weight: bold;
       font-size: 25px;
+      
         ;"><span style="color: rgb(2,255,7);
         font-size: 35px;">Contact </span>Us</div>
       <div class="form-group">
@@ -159,7 +164,7 @@ display:inline;">
       </div>
   
       <div class="form-group">
-        <input type="email" id="email" name="email" placeholder="Your Message" >
+        <input type="text" id="email" name="email" placeholder="Your Message" >
       </div>
       
      
@@ -181,6 +186,15 @@ x.style.display = "none";
 x.style.display = "flex";
 }
 }
+
+
+
+
+
+
+
+
+
       window.onscroll = function() {scrollFunction(),scrollFunction1(),scrollFunction2()};
 
 function scrollFunction() {
