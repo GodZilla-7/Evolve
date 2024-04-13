@@ -1,311 +1,246 @@
-body {
-  position: relative;
-  z-index: -7;
-  margin: 0%;
-  overflow-x:hidden;
-  background-color: rgb(0, 0, 0);
-  
-}
-li:hover{
-cursor: pointer;
-transition: all 0.5s;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-.footer {
-  background-color: rgb(15, 15, 15);
-  color: white;
-  text-align: center;
-  height: fit-content;
-  padding-bottom: 50px;
-  
-}
-.footer-logo {
-  margin: auto;
-  margin-bottom: 70px;
-max-width: 200px;
-margin-top: 80px;
-
-  
-}
-
-
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 0;
-  margin-right: 20vw;
-  font-family: public sans,arial;
-  font-weight: 700;
-}
-li:hover{
-  transform: scale(1.5);
-
-  
-
-}
-.footer-links li {
-  display: inline;
-  margin-bottom: 30px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 40vw;
-  padding: 10px;
-  border-radius: 5px;
-  border: 2px solid #ccc;
-  
-}
-
-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-
-
-
-
-
-
-
-
-
-.aboutpara{
-  font-family: public sans, arial;
-font-weight: bold;
-  color:rgb(2,255,7);
-  padding-top: 40px;
-  padding-bottom: 6px;
-  font-size: 40px;
-  
-  border-bottom-style:dotted;
-  border-color: white;
-}
-
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 45px;
-  padding: 40px;
-  transition: all 1s;
-  border-bottom-style: dotted;
-  border-color: white;
-  
-}
-
-
-.image-item {
-  width: 100%;
-  transition: all 0.3s;
- 
-}
-
-
-.image-item img {
-  max-width: 100%;
-  height: auto;
-  border-radius:  30px;;
-}
-.image-item:hover{
-  transform: scale(1.15);
-}
-
-
-
-.Bg{
-
-height: 100vh;
-width: 100vw;
-}
-.about{
-
-  background-image: url(abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9980.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  transition: all 1s;
-}
-.vr{
-  padding-top: 6px;
-font-family: public sans,arial;
-font-weight: 600;
-font-size: large;
-color: white;
-padding-bottom: 20px;
-margin: auto;
-}
-.links-nav {
-  margin-left: 8px;
-  margin-right: 8px;
-  font-family: Public Sans, sans-serif;
-  color: rgb(230, 230, 230);
-  font-size: medium;
-  border-color: rgb(2,255,7);
-  animation: movecontent2 3s ease forwards;
-
-  transition: border 0.15s ease;
-  transition: color 0.15s;
-}
-.links-nav:hover {
-  border-bottom-style: solid;
-  color: hsl(0, 0%, 60%);
-  border-width: 5px;
-  padding-bottom: 16px;
-  cursor: pointer;
-}
-
-.req-inv,
-.req-inv-nav,.req-inv-foot {
-  margin-right: 120px;
-  border-style: none;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 32px;
-  padding-right: 32px;
-  background-color: rgb(2,255,7);
-  border-radius: 30px;
-  font-family: "Public Sans", sans-serif;
-  color: white;
-  font-weight: 800;
-  transition: color 0.5s;
-  
-}
-
-.req-inv:hover, .req-inv-nav:hover, .req-inv-foot:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-.navbar {
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  height: 60px;
-  align-items: center;
-cursor: default;
-position:fixed;
-top:0;
-width:96%;
-margin-left: 2%;
-margin-top: 1%;
-border-radius: 10px;
-transition: all 0.8s;
-height: 75px;
-backdrop-filter: blur(50px);
-
-}
-.hamburger-menu {
-  position: absolute;
-  display: none;
-  top: 27px;
-  right: 35px;
-}
-.logo {
-  margin-left: 120px;
- 
- 
-
-}
-.moblink{
-  font-family: public sans,arial;
-  cursor: pointer;
-  margin: 8px;
-  font-size: large;
-  color: rgb(230, 230, 230);
-}
-.mobnav{
-display: none;
-flex-direction: column;
-position: fixed;
-align-items: center;
-margin-left: 13vw;
-border-radius: 30px;
-width: 74vw;
-margin-top: 90px;
-z-index: 500;
-backdrop-filter: blur(50px);
-}
-
-
-@media (max-width: 950px){
-  
-.logo{
-  margin-left: 40px;
-}
-.req-inv-nav{
-  margin-right: 0px;
-  }
-
-}
-@media (max-width: 805px){
-  .req-inv-nav{
-    display: none;
-  }
-  .link{
-    margin-right: 20px;
-  }
-  }
-
-@media (max-width:690px) {
-  
-
-  .req-inv-nav {
-    display: none;
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     
-  }
+  </head>
+  <body
+  >
+<header id="head">
+
+  <div class="navbar">
+      
+    <img class="hamburger-menu" src="icon-hamburger.svg"
+    onclick="changeImage()"
+    >
+    <div class="logo" style="padding-top: 8px">
+      <img style="width:80px" src="logo(4).png" />
+    </div>
+    <div class="link">
+      <a class="links-nav" href="#head">Home</a>
+      <a class="links-nav" href="#about">About</a>
+      <a class="links-nav" href="#foot">Contact</a>
+      <a class="links-nav" href="#gallery">Gallery</a>
+      <a class="links-nav" href="#about">Achievements</a>
+    </div>
+    <button class="req-inv-nav">
+     Our Team
+    </button>
+  </div>
+
+  <div class="mobnav">
+    <a style="margin-top: 25px;" class="moblink" href="#head">Home</a>
+    <a class="moblink" href="#about">About</a>
+    <a class="moblink" href="#foot">Contact</a>
+    <a class="moblink" href="#gallery">Gallery</a>
+    <a style="margin-bottom: 25px;"  class="moblink" href="#head">Careers</a>
+  </div>
+</header>
+
+
+<div style="background-color: black;" class="Bg">
+<img style="  width:100%;
+height:100%;
+object-fit:cover;
+display: block;
+opacity: 0.5;
+
+" src="Bg.jpg">
+</div>
+
+
+<div id="about" class="about">
  
-  .navbar {
-    width: 100vw;
-  }
-  body {
-    overflow-x: hidden;
-  }
- 
-  .hamburger-menu {
-    display: flex;
-    cursor: pointer;
-  }
-  .hamburger-menu:hover{
-    opacity: 0.4;
-    transition: all 0.15s;
-  }
-  .moblink:hover{
-    opacity: 0.5;
-    transition: all 0.15s;
-  }
-  .links-nav {
-    display: none;
-  }
-  .logo {
-    margin-left: 30px;
-  }
- 
+  <div class="aboutpara" style="margin: auto;">
+    About <span style="color: white;">Us</span>
+  </div>
+  <div class="vr">
+  We're<span style="color: rgb(2,255,7);
+  font-size: x-large;"> EV</span>OLVE
+</div>
+
+<div style="width: fit-content;
+margin: auto;">
+  <img style="width: 30vw;
+  min-width: 340px;
+  border-radius: 30px;
+  " src="Snapinsta.app_425449255_905363547802456_6111451529000271246_n_1080.jpg">
+
+</div>
+<div style="width: 72vw;
+max-width: 600px;
+margin: auto;
+font-family: public sans;
+">
+<p style="color: white;">
+  Evolve, originating from MANIT, stands as a beacon in electric vehicle innovation. With a focus on sustainability, it garners awards nationally. Through collaborative efforts, students engineer cutting-edge designs, earning acclaim. Evolve isn't just about accolades; it's a community, fostering passion for clean energy. Together, members push boundaries, inspiring others to join the movement towards a greener tomorrow.
+
+</p>
+</div>
+
+</div>
+
+
+
+<div id="gallery" style="display: flex;">
+  <div class="aboutpara" style="margin: auto;
+display:inline;">
+  Our <span style="color: white;">Gallery</span>
+</div>
+</div>
+
+
+<div class="image-grid">
+  <div class="image-item">
+    <img src="gallery/1.jpg" alt="Image 1">
+  </div>
+  <div class="image-item">
+    <img src="gallery/2.jpg" alt="Image 2">
+  </div>
+  <div class="image-item">
+    <img src="gallery/3.jpg" alt="Image 3">
+  </div>
+  <div class="image-item">
+    <img src="gallery/4.jpg" alt="Image 1">
+  </div>
+  <div class="image-item">
+    <img src="gallery/5.jpg" alt="Image 2">
+  </div>
+  <div class="image-item">
+    <img src="gallery/6.jpg" alt="Image 3">
+  </div>
+</div>
+
+
+
+
+
+
+<footer id="foot" class="footer">
+  <div style="display: flex;">
+    <div class="footer-logo">
+    <img style="width: 100%;" src="logo(4).png">
+  </div>
+  </div>
+
+  <div style="display: flex;align-items: center;
+  justify-content: center;">
+    <ul class="footer-links">
+      <li><a><span style="color: rgb(2,255,7);
+      font-size: larger;
+      font-weight: 800;">H</span>ome</a></li>
+      <li><a><span style="color: rgb(2,255,7);font-size: larger;
+        font-weight: 800;">A</span>bout</a></li>
+      <li><a><span style="color: rgb(2,255,7);
+      font-size: larger;
+      font-weight: 800;">Our </span>Team</a></li>
+
+    </ul>
+    
+    <form>
+      <div style="margin-bottom: 20px; font-family: public sans, arial;
+      font-weight: bold;
+      font-size: 25px;
+      
+        ;"><span style="color: rgb(2,255,7);
+        font-size: 35px;">Contact </span>Us</div>
+      <div class="form-group">
+  
+        <input type="text" placeholder="Your name">
+      </div>
+      
+      <div class="form-group">
+        <input type="email" id="email"  placeholder="Your email">
+      </div>
+  
+      <div class="form-group">
+        <input type="text" id="email" name="email" placeholder="Your Message" >
+      </div>
+      
+     
+      
+      <button class="req-inv-foot">Send Message</button>
+    </form>
+  </div>
+  
+  
+</footer>
+
+    
+    <script>
+      function changeImage(){
+  let x= document.querySelector(".mobnav");
+  if (x.style.display === "flex") {
+x.style.display = "none";
+} else {
+x.style.display = "flex";
 }
+}
+
+
+
+
+
+
+
+
+
+      window.onscroll = function() {scrollFunction(),scrollFunction1(),scrollFunction2()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector(".navbar").style.width = "86%";
+    document.querySelector(".navbar").style.marginLeft= "7%";
+    document.querySelector(".navbar").style.height= "55px";
+   
+  } else {
+    document.querySelector(".navbar").style.width = "96%";
+    document.querySelector(".navbar").style.marginLeft= "2%";
+    document.querySelector(".navbar").style.height= "75px";
+  }
+} 
+
+
+
+
+function scrollFunction1() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    document.querySelector(".about").style.width = "96%";
+    document.querySelector(".about").style.marginLeft= "2%";
+    document.querySelector(".about").style.opacity = "1";
+    
+   
+  } else {
+    document.querySelector(".about").style.width = "40%";
+    document.querySelector(".about").style.marginLeft= "10%";
+    document.querySelector(".about").style.opacity = ".2";
+  
+  }
+} 
+
+function scrollFunction2() {
+  if (document.body.scrollTop > 1150 || document.documentElement.scrollTop > 1150) {
+    
+    document.querySelector(".image-grid").style.opacity = "1";
+    
+   
+  } else {
+   
+    document.querySelector(".image-grid").style.opacity = ".2";
+  
+  }
+} 
+
+    </script> 
+  </body>
+</html>
