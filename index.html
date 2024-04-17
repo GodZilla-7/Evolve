@@ -38,8 +38,8 @@
     </button>
   </div>
 
-  <div class="mobnav">
-    <a style="margin-top: 25px;" class="moblink" href="#head">Home</a>
+  <div onclick="function7();" class="mobnav">
+    <a style="margin-top: 25px;" class="moblink" href="#head" >Home</a>
     <a class="moblink" href="#about">About</a>
     <a class="moblink" href="#foot">Contact</a>
     <a class="moblink" href="#gallery">Gallery</a>
@@ -240,6 +240,23 @@ function scrollFunction2() {
   
   }
 } 
+function scrollFunction1() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector(".req-inv-nav").style.paddingTop = "8px";
+    document.querySelector(".req-inv-nav").style.paddingBottom = "8px";
+  
+    
+   
+  } else {
+    document.querySelector(".req-inv-nav").style.paddingTop = "13px";
+    document.querySelector(".req-inv-nav").style.paddingBottom = "13px";
+  
+  
+  }
+} 
+function function7() {
+  document.querySelector(".mobnav").style.display = 'none';
+}
 
     </script> 
   </body>
